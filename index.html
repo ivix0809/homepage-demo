@@ -1,73 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>我的个人主页</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ivix0809 · 这是我的个人主页</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            line-height: 1.8;
-        }
+    body {
+      font-family: "Microsoft YaHei", Arial, sans-serif;
+      background: linear-gradient(135deg, #eef2ff, #f8fafc);
+      color: #1f2937;
+      line-height: 1.8;
+    }
 
-        h1 {
-            color: #2563eb;
-        }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
 
-        .card {
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 10px;
-        }
-    </style>
+    .hero {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(59,130,246,0.3);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #6b7280;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin: 5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+
+    .card h2 {
+      font-size: 22px;
+      margin-bottom: 16px;
+      color: #2563eb;
+    }
+
+    .card p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
-
-
 <body>
+  <div class="container">
 
-<h1>老师，您好！我是何宜瑾。</h1>
+    <section class="hero">
+      <div class="avatar">I</div>
+      <h1>老师好！我是何宜瑾</h1>
+      <p class="subtitle">我是复旦大学经济学院保险专业硕士学生</p>
+      <span class="tag">AI</span>
+      <span class="tag">数据分析</span>
+      <span class="tag">Python</span>
+      <span class="tag">大语言模型</span>
+    </section>
 
-<div class="card">
+    <section class="grid">
+      <div class="card">
+        <h2>👋 关于我</h2>
+        <p>你好！我是复旦大学的一名学生，目前正在学习人工智能、大模型与数据分析相关内容。</p>
+        <p>我对用技术解决实际问题很感兴趣，也希望未来能做出利用好AI。</p>
+      </div>
 
-<h2>个人介绍</h2>
+      <div class="card">
+        <h2>🎯 我的目标</h2>
+        <p>希望通过不断学习，提升自己的编程、分析与 AI 应用能力。</p>
+        <p>目前正在完成课程作业，并尝试搭建属于自己的个人主页。</p>
+      </div>
 
-<p>
-我是复旦大学经济学院保险专硕学生。
-</p>
+      <div class="card">
+        <h2>📚 我的兴趣</h2>
+        <ul>
+          <li>唱歌</li>
+          <li>弹钢琴</li>
+          <li>球类运动</li>
+          <li>数据分析</li>
+          <li>学习新技能</li>
+        </ul>
+      </div>
 
-<p>
-正在学习人工智能、大模型和数据分析。
-</p>
+      <div class="card">
+        <h2>📮 联系方式</h2>
+        <p>Email：</p>
+        <p><a href="mailto:26210680322@m.fudan.edu.cn">26210680322@m.fudan.edu.cn</a></p>
+        <p>GitHub：</p>
+        <p><a href="https://github.com/ivix0809" target="_blank">https://github.com/ivix0809</a></p>
+      </div>
+    </section>
 
+    <div class="footer">
+      <p>© 2026 ivix0809 · Personal Homepage</p>
+    </div>
 
-<h2>我的兴趣</h2>
-
-<ul>
-<li>人工智能</li>
-<li>弹钢琴</li>
-<li>游泳</li>
-<li>各种球类运动</li>
-</ul>
-
-
-<h2>我的目标</h2>
-
-<p>
-学习AI技术，并利用AI技术解决实际问题。
-</p>
-
-
-<h2>联系方式</h2>
-
-<p>
-Email:26210680322@m.fudan.edu.cn
-</p>
-
-
-</div>
-
-
+  </div>
 </body>
 </html>
